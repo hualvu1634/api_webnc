@@ -154,3 +154,4 @@ C:\Users\hualv\OneDrive\Documents\WebSmartphone\WebSmartphone\obj\Debug\net10.0\
 C:\Users\hualv\OneDrive\Documents\WebSmartphone\WebSmartphone\obj\Debug\net10.0\WebSmartphone.pdb
 C:\Users\hualv\OneDrive\Documents\WebSmartphone\WebSmartphone\obj\Debug\net10.0\WebSmartphone.genruntimeconfig.cache
 C:\Users\hualv\OneDrive\Documents\WebSmartphone\WebSmartphone\obj\Debug\net10.0\ref\WebSmartphone.dll
+C:\Users\hualv\OneDrive\Documents\WebSmartphone\WebSmartphone\obj\Debug\net10.0\WebSmartphone.sourcelink.json

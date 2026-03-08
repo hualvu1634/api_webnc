@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using WebSmartphone.dto.request;
 using WebSmartphone.Service;
 
@@ -24,5 +25,19 @@ public class AuthController : ControllerBase
             return Unauthorized(new { message = "Email hoặc mật khẩu không đúng!" });
 
         return Ok(response);
+    }
+    [HttpPost("register")]
+    public async Task<IActionResult> Register([FromBody] UserRequest request)
+    {
+        var result = await _authService.RegisterAsync(request);
+
+        // Nếu thất bại (trùng email, sđt...)
+        if (!result.IsSuccess)
+        {
+            return BadRequest(new { message = result.ErrorMessage });
+        }
+
+        // Nếu thành công trả về thông tin user
+        return Ok(result.Data);
     }
 }

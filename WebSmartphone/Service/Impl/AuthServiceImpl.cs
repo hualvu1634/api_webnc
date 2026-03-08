@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using WebSmartphone.Data;
 using WebSmartphone.dto.request;
 using WebSmartphone.dto.response;
@@ -24,12 +25,56 @@ namespace WebSmartphone.Service.Impl
 
             return new LoginResponse
             {
-                UserId = user.UserId,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
                 Email = user.Email,
-                Role = user.Role
+                UserId = user.UserId,
+                Role = user.Role.ToString(),
             };
+        }
+        // Triển khai hàm Register
+        public async Task<(bool IsSuccess, string ErrorMessage, UserResponse? Data)> RegisterAsync(UserRequest request)
+        {
+            // 1. Kiểm tra Email đã tồn tại chưa
+            bool emailExists = await _context.Users.AnyAsync(u => u.Email == request.Email);
+            if (emailExists) return (false, "Email này đã được sử dụng!", null);
+
+            // 2. Kiểm tra Số điện thoại đã tồn tại chưa
+            bool phoneExists = await _context.Users.AnyAsync(u => u.PhoneNumber == request.PhoneNumber);
+            if (phoneExists) return (false, "Số điện thoại này đã được sử dụng!", null);
+
+            // 3. Tạo User mới
+            var newUser = new User
+            {
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                Email = request.Email,
+                Password = request.Password, // Lưu ý: Thực tế nên mã hóa Hash mật khẩu ở đây
+                PhoneNumber = request.PhoneNumber,
+                Role = Role.USER // Mặc định role là USER khi đăng ký mới
+            };
+
+            _context.Users.Add(newUser);
+            await _context.SaveChangesAsync(); // Lưu để lấy được UserId
+
+            // 4. Tạo luôn 1 giỏ hàng trống cho User này
+            var newCart = new Cart
+            {
+                UserId = newUser.UserId
+            };
+            _context.Carts.Add(newCart);
+            await _context.SaveChangesAsync();
+
+            // 5. Trả về thông tin
+            var responseData = new UserResponse
+            {
+                UserId = newUser.UserId,
+                FirstName = newUser.FirstName,
+                LastName = newUser.LastName,
+                Email = newUser.Email,
+                PhoneNumber = newUser.PhoneNumber,
+                Role = newUser.Role.ToString()
+            };
+
+            return (true, string.Empty, responseData);
         }
     }
 }

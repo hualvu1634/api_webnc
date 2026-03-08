@@ -17,7 +17,7 @@ public partial class Order
 
     public decimal? TotalAmount { get; set; }
 
-    public string? OrdersStatus { get; set; }
+    public Status? OrdersStatus { get; set; }
 
     public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
 

@@ -19,7 +19,7 @@ public partial class User
 
     public DateTime? CreateDate { get; set; }
 
-    public int Role { get; set; }
+    public Role Role { get; set; }
 
     public virtual Cart? Cart { get; set; }
 

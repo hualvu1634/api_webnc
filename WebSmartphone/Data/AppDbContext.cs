@@ -100,8 +100,11 @@ public partial class AppDbContext : DbContext
                 .HasColumnName("order_date");
             entity.Property(e => e.OrdersStatus)
                 .HasMaxLength(50)
-                .HasDefaultValue("Chờ xác nhận")
-                .HasColumnName("orders_status");
+        .HasColumnName("orders_status")
+      
+        .HasConversion<string>()
+        
+        .HasDefaultValue(Status.PENDING);
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(20)
                 .IsUnicode(false)

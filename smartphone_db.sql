@@ -25,8 +25,8 @@ CREATE TABLE Users (
     email        VARCHAR(50)   NOT NULL UNIQUE,
     password     VARCHAR(50)   NOT NULL,
     phone_number VARCHAR(20)   NOT NULL UNIQUE,
-    create_date  DATETIME      DEFAULT GETDATE()
-    role INT NOT NULL DEFAULT 0;
+    create_date  DATETIME      DEFAULT GETDATE(),
+    role INT NOT NULL DEFAULT 0
 );
 GO
 
@@ -81,7 +81,7 @@ CREATE TABLE Orders (
     phone_number  VARCHAR(20)    NOT NULL,
     order_date    DATETIME       DEFAULT GETDATE(),
     total_amount  DECIMAL(10, 2) NULL,
-    orders_status NVARCHAR(50)   DEFAULT N'Chờ xác nhận',
+    orders_status NVARCHAR(50)   DEFAULT N'PENDING',
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 GO
@@ -120,6 +120,6 @@ GO
 INSERT INTO Products (product_name, descriptions, price, image_url, quantity, category_id) 
 VALUES 
 (N'Iphone 17 Promax', N'8GB-256GB', 38000000, 'http://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-17-pro-max.jpg', 10000, 1),
-(N'Iphone 15 Promax', N'8GB-256GB', 25000000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone15-pro-max-titan-nau.jpg', 10000, 1);
+(N'Iphone 15 Promax', N'8GB-256GB', 25000000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone15-pro-max-titan-nau.jpg', 10000, 1),
 (N'Iphone 16 Promax', N'8GB-256GB', 32000000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-16-pro-max-titan-trang.png', 10000, 1);
 GO
