@@ -53,6 +53,18 @@ public class ProductServiceImpl : ProductService
 
     public async Task<ProductResponse> CreateAsync(ProductRequest request)
     {
+        var categoryExists = await _context.Categories.AnyAsync(c => c.CategoryId == request.CategoryId);
+        if (!categoryExists)
+        {
+            throw new ArgumentException("Danh mục không tồn tại.");
+        }
+
+    
+        var nameExists = await _context.Products.AnyAsync(p => p.ProductName == request.ProductName);
+        if (nameExists)
+        {
+            throw new ArgumentException("Tên sản phẩm đã tồn tại.");
+        }
         var product = new Product
         {
             ProductName = request.ProductName,
@@ -69,10 +81,26 @@ public class ProductServiceImpl : ProductService
         return await GetByIdAsync(product.ProductId) ?? throw new Exception("Lỗi khi tạo sản phẩm");
     }
 
+    // ... (các phần khác giữ nguyên)
+
     public async Task<bool> UpdateAsync(int id, ProductRequest request)
     {
         var existing = await _context.Products.FindAsync(id);
         if (existing == null) return false;
+
+        
+        var categoryExists = await _context.Categories.AnyAsync(c => c.CategoryId == request.CategoryId);
+        if (!categoryExists)
+        {
+            throw new ArgumentException("Danh mục không tồn tại.");
+        }
+
+   
+        var nameExists = await _context.Products.AnyAsync(p => p.ProductName == request.ProductName && p.ProductId != id);
+        if (nameExists)
+        {
+            throw new ArgumentException("Tên sản phẩm đã tồn tại ");
+        }
 
         existing.ProductName = request.ProductName;
         existing.Descriptions = request.Descriptions;

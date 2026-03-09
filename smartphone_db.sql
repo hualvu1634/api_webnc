@@ -117,9 +117,13 @@ VALUES
 (N'Quản trị', N'Viên', 'admin@gmail.com', '123456', '0123456789', 1),
 (N'Người', N'Dùng', 'user@gmail.com', '123456', '0987654321', 0);
 GO
+INSERT INTO Carts (user_id) 
+VALUES (2);
+Go
 INSERT INTO Products (product_name, descriptions, price, image_url, quantity, category_id) 
 VALUES 
 (N'Iphone 17 Promax', N'8GB-256GB', 38000000, 'http://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-17-pro-max.jpg', 10000, 1),
 (N'Iphone 15 Promax', N'8GB-256GB', 25000000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone15-pro-max-titan-nau.jpg', 10000, 1),
 (N'Iphone 16 Promax', N'8GB-256GB', 32000000, 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone-16-pro-max-titan-trang.png', 10000, 1);
 GO
+

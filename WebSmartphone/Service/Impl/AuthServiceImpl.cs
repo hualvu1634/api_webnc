@@ -30,7 +30,7 @@ namespace WebSmartphone.Service.Impl
                 Role = user.Role.ToString(),
             };
         }
-        // Triển khai hàm Register
+        
         public async Task<(bool IsSuccess, string ErrorMessage, UserResponse? Data)> RegisterAsync(UserRequest request)
         {
             // 1. Kiểm tra Email đã tồn tại chưa
@@ -47,7 +47,7 @@ namespace WebSmartphone.Service.Impl
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Email = request.Email,
-                Password = request.Password, // Lưu ý: Thực tế nên mã hóa Hash mật khẩu ở đây
+                Password = request.Password, 
                 PhoneNumber = request.PhoneNumber,
                 Role = Role.USER // Mặc định role là USER khi đăng ký mới
             };
@@ -55,7 +55,7 @@ namespace WebSmartphone.Service.Impl
             _context.Users.Add(newUser);
             await _context.SaveChangesAsync(); // Lưu để lấy được UserId
 
-            // 4. Tạo luôn 1 giỏ hàng trống cho User này
+  
             var newCart = new Cart
             {
                 UserId = newUser.UserId
@@ -63,7 +63,6 @@ namespace WebSmartphone.Service.Impl
             _context.Carts.Add(newCart);
             await _context.SaveChangesAsync();
 
-            // 5. Trả về thông tin
             var responseData = new UserResponse
             {
                 UserId = newUser.UserId,

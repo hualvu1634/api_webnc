@@ -24,17 +24,25 @@ public class CategoryServiceImpl : CategoryService
             }).ToListAsync();
     }
 
-    public async Task<CategoryResponse?> GetByIdAsync(int id)
+    public async Task<IEnumerable<ProductResponse>> GetByIdAsync(int id)
     {
-        var category = await _context.Categories.FindAsync(id);
-        if (category == null) return null;
-
-        return new CategoryResponse
-        {
-            CategoryId = category.CategoryId,
-            CategoryName = category.CategoryName,
-            CategoryDate = category.CategoryDate
-        };
+        // Truy vấn vào bảng Products, lọc theo CategoryId
+        return await _context.Products
+            .Where(p => p.CategoryId == id)
+            .Select(p => new ProductResponse
+            {
+                ProductId = p.ProductId,
+                ProductName = p.ProductName,
+                Descriptions = p.Descriptions,
+                Price = p.Price,
+                ImageUrl = p.ImageUrl,
+                Quantity = p.Quantity,
+                CategoryId = p.CategoryId,
+                // Lấy tên danh mục thông qua Navigation Property (đảm bảo model Product có liên kết tới Category)
+                CategoryName = p.Category != null ? p.Category.CategoryName : null,
+                ProductDate = p.ProductDate
+            })
+            .ToListAsync();
     }
 
     public async Task<CategoryResponse> CreateAsync(CategoryRequest request)
@@ -42,7 +50,7 @@ public class CategoryServiceImpl : CategoryService
         var category = new Category
         {
             CategoryName = request.CategoryName
-            // CategoryDate sẽ tự động lấy GETDATE() nhờ config trong DbContext
+            
         };
 
         _context.Categories.Add(category);
