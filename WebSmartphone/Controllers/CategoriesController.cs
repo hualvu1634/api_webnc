@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
 using WebSmartphone.dto.request;
 using WebSmartphone.Service;
 
@@ -21,28 +23,76 @@ public class CategoriesController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> Get(int id)
     {
-        var response = await _categoryService.GetByIdAsync(id);
-        return response != null ? Ok(response) : NotFound(new { message = "Không tìm thấy danh mục" });
+        try
+        {
+            var response = await _categoryService.GetByIdAsync(id);
+            return Ok(response);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "Lỗi hệ thống: " + ex.Message });
+        }
     }
 
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CategoryRequest request)
     {
-        var created = await _categoryService.CreateAsync(request);
-        return CreatedAtAction(nameof(Get), new { id = created.CategoryId }, created);
+        try
+        {
+            var created = await _categoryService.CreateAsync(request);
+            return CreatedAtAction(nameof(Get), new { id = created.CategoryId }, created);
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "Lỗi hệ thống: " + ex.Message });
+        }
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] CategoryRequest request)
     {
-        var success = await _categoryService.UpdateAsync(id, request);
-        return success ? NoContent() : NotFound(new { message = "Không tìm thấy danh mục để cập nhật" });
+        try
+        {
+            await _categoryService.UpdateAsync(id, request);
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "Lỗi hệ thống: " + ex.Message });
+        }
     }
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-        var success = await _categoryService.DeleteAsync(id);
-        return success ? NoContent() : NotFound(new { message = "Không tìm thấy danh mục để xóa" });
+        try
+        {
+            await _categoryService.DeleteAsync(id);
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "Lỗi hệ thống: " + ex.Message });
+        }
     }
 }

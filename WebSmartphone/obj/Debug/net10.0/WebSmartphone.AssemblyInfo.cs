@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebSmartphone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10255f05c3789f42e6ad067bbb6b246436c0c51f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bc532d08e4266a3b14489b19a67143ed7d06180")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebSmartphone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebSmartphone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebSmartphone.dto.request;
@@ -37,12 +38,10 @@ public class ProductController : ControllerBase
         }
         catch (ArgumentException ex)
         {
-            // Bắt lỗi ArgumentException từ Service ném ra (Trùng tên, Sai danh mục)
             return BadRequest(new { message = ex.Message });
         }
         catch (Exception ex)
         {
-            // Bắt các lỗi hệ thống không lường trước được
             return StatusCode(500, new { message = "Lỗi hệ thống: " + ex.Message });
         }
     }
@@ -52,12 +51,15 @@ public class ProductController : ControllerBase
     {
         try
         {
-            var success = await _productService.UpdateAsync(id, request);
-            return success ? NoContent() : NotFound(new { message = "Không tìm thấy sản phẩm" });
+            await _productService.UpdateAsync(id, request);
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { message = ex.Message });
         }
         catch (ArgumentException ex)
         {
-            // Bắt lỗi tương tự như lúc tạo mới
             return BadRequest(new { message = ex.Message });
         }
         catch (Exception ex)
@@ -69,7 +71,18 @@ public class ProductController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-        var success = await _productService.DeleteAsync(id);
-        return success ? NoContent() : NotFound(new { message = "Không tìm thấy sản phẩm" });
+        try
+        {
+            await _productService.DeleteAsync(id);
+            return NoContent();
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "Lỗi hệ thống: " + ex.Message });
+        }
     }
 }

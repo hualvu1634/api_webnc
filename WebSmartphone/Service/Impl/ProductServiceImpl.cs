@@ -92,7 +92,7 @@ public class ProductServiceImpl : ProductService
         var categoryExists = await _context.Categories.AnyAsync(c => c.CategoryId == request.CategoryId);
         if (!categoryExists)
         {
-            throw new ArgumentException("Danh mục không tồn tại.");
+            throw new KeyNotFoundException("Danh mục không tồn tại.");
         }
 
    

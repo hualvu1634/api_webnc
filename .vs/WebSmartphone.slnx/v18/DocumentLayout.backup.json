@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\service\\impl\\productserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\service\\impl\\productserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\service\\impl\\authserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\service\\impl\\authserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\service\\impl\\categoryserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\service\\impl\\categoryserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\dto\\request\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\dto\\request\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\service\\impl\\productserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\service\\impl\\productserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\dto\\request\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\dto\\request\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\dto\\request\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\dto\\request\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\dto\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\dto\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -65,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|c:\\users\\hualv\\onedrive\\documents\\websmartphone\\websmartphone\\service\\impl\\authserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9BADA09-631A-AF01-D907-78D2D2747F62}|WebSmartphone\\WebSmartphone.csproj|solutionrelative:websmartphone\\service\\impl\\authserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -91,12 +107,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductServiceImpl.cs",
+              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\ProductServiceImpl.cs",
+              "RelativeDocumentMoniker": "WebSmartphone\\Service\\Impl\\ProductServiceImpl.cs",
+              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\ProductServiceImpl.cs*",
+              "RelativeToolTip": "WebSmartphone\\Service\\Impl\\ProductServiceImpl.cs*",
+              "ViewState": "AgIAAFcAAAAAAAAAAADwv14AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T08:50:56.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthServiceImpl.cs",
+              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\AuthServiceImpl.cs",
+              "RelativeDocumentMoniker": "WebSmartphone\\Service\\Impl\\AuthServiceImpl.cs",
+              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\AuthServiceImpl.cs",
+              "RelativeToolTip": "WebSmartphone\\Service\\Impl\\AuthServiceImpl.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T08:49:46.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Controllers\\CategoriesController.cs",
               "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "WebSmartphone\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAgwGEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T08:52:37.656Z",
               "EditorCaption": ""
@@ -109,27 +151,91 @@
               "RelativeDocumentMoniker": "WebSmartphone\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Controllers\\ProductController.cs",
               "RelativeToolTip": "WebSmartphone\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAADwv0AAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAwwFcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T08:52:41.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CategoryServiceImpl.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\CategoryServiceImpl.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Service\\Impl\\CategoryServiceImpl.cs",
-              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\CategoryServiceImpl.cs*",
-              "RelativeToolTip": "WebSmartphone\\Service\\Impl\\CategoryServiceImpl.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\CategoryServiceImpl.cs",
+              "RelativeToolTip": "WebSmartphone\\Service\\Impl\\CategoryServiceImpl.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T08:50:49.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "UserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\dto\\request\\UserRequest.cs",
+              "RelativeDocumentMoniker": "WebSmartphone\\dto\\request\\UserRequest.cs",
+              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\dto\\request\\UserRequest.cs",
+              "RelativeToolTip": "WebSmartphone\\dto\\request\\UserRequest.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T07:44:03.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\dto\\request\\CategoryRequest.cs",
+              "RelativeDocumentMoniker": "WebSmartphone\\dto\\request\\CategoryRequest.cs",
+              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\dto\\request\\CategoryRequest.cs",
+              "RelativeToolTip": "WebSmartphone\\dto\\request\\CategoryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T07:42:11.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\dto\\request\\ProductRequest.cs",
+              "RelativeDocumentMoniker": "WebSmartphone\\dto\\request\\ProductRequest.cs",
+              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\dto\\request\\ProductRequest.cs",
+              "RelativeToolTip": "WebSmartphone\\dto\\request\\ProductRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T07:44:00.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\dto\\request\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "WebSmartphone\\dto\\request\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\dto\\request\\LoginRequest.cs",
+              "RelativeToolTip": "WebSmartphone\\dto\\request\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T07:43:59.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebSmartphone\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WebSmartphone\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T08:52:29.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\CategoryService.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Service\\CategoryService.cs",
@@ -137,25 +243,11 @@
               "RelativeToolTip": "WebSmartphone\\Service\\CategoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T08:51:53.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T08:51:53.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductServiceImpl.cs",
-              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\ProductServiceImpl.cs",
-              "RelativeDocumentMoniker": "WebSmartphone\\Service\\Impl\\ProductServiceImpl.cs",
-              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\ProductServiceImpl.cs",
-              "RelativeToolTip": "WebSmartphone\\Service\\Impl\\ProductServiceImpl.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAADwv2UAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T08:50:56.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Program.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Program.cs",
@@ -163,12 +255,11 @@
               "RelativeToolTip": "WebSmartphone\\Program.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAADgvxgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T09:14:10.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T09:14:10.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Models\\Role.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Models\\Role.cs",
@@ -180,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Models\\CartItem.cs",
@@ -192,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Models\\User.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Models\\User.cs",
@@ -204,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Models\\Product.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Models\\Product.cs",
@@ -216,19 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "WebSmartphone\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "WebSmartphone\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAzwCIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T08:52:29.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Data\\AppDbContext.cs",
@@ -240,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Models\\Cart.cs",
@@ -252,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Models\\Category.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Models\\Category.cs",
@@ -264,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\ProductService.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Service\\ProductService.cs",
@@ -276,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\AuthService.cs",
               "RelativeDocumentMoniker": "WebSmartphone\\Service\\AuthService.cs",
@@ -285,18 +364,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T08:51:52.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AuthServiceImpl.cs",
-              "DocumentMoniker": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\AuthServiceImpl.cs",
-              "RelativeDocumentMoniker": "WebSmartphone\\Service\\Impl\\AuthServiceImpl.cs",
-              "ToolTip": "C:\\Users\\hualv\\OneDrive\\Documents\\WebSmartphone\\WebSmartphone\\Service\\Impl\\AuthServiceImpl.cs",
-              "RelativeToolTip": "WebSmartphone\\Service\\Impl\\AuthServiceImpl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T08:49:46.293Z"
             }
           ]
         }

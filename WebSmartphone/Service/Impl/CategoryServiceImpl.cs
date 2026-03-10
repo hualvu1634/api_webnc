@@ -4,6 +4,8 @@ using WebSmartphone.dto.request;
 using WebSmartphone.dto.response;
 using WebSmartphone.Models;
 using WebSmartphone.Service;
+using System;
+using System.Collections.Generic;
 
 namespace WebSmartphone.Service.Impl;
 
@@ -26,7 +28,10 @@ public class CategoryServiceImpl : CategoryService
 
     public async Task<IEnumerable<ProductResponse>> GetByIdAsync(int id)
     {
-        // Truy vấn vào bảng Products, lọc theo CategoryId
+        var categoryExists = await _context.Categories.AnyAsync(c => c.CategoryId == id);
+        if (!categoryExists)
+            throw new KeyNotFoundException("Không tìm thấy danh mục.");
+
         return await _context.Products
             .Where(p => p.CategoryId == id)
             .Select(p => new ProductResponse
@@ -38,7 +43,6 @@ public class CategoryServiceImpl : CategoryService
                 ImageUrl = p.ImageUrl,
                 Quantity = p.Quantity,
                 CategoryId = p.CategoryId,
-                // Lấy tên danh mục thông qua Navigation Property (đảm bảo model Product có liên kết tới Category)
                 CategoryName = p.Category != null ? p.Category.CategoryName : null,
                 ProductDate = p.ProductDate
             })
@@ -47,11 +51,11 @@ public class CategoryServiceImpl : CategoryService
 
     public async Task<CategoryResponse> CreateAsync(CategoryRequest request)
     {
-        var category = new Category
-        {
-            CategoryName = request.CategoryName
-            
-        };
+        // Kiểm tra đã tồn tại
+        if (await _context.Categories.AnyAsync(c => c.CategoryName == request.CategoryName))
+            throw new ArgumentException("Tên danh mục đã tồn tại.");
+
+        var category = new Category { CategoryName = request.CategoryName };
 
         _context.Categories.Add(category);
         await _context.SaveChangesAsync();
@@ -67,7 +71,12 @@ public class CategoryServiceImpl : CategoryService
     public async Task<bool> UpdateAsync(int id, CategoryRequest request)
     {
         var existing = await _context.Categories.FindAsync(id);
-        if (existing == null) return false;
+        // Kiểm tra không tồn tại
+        if (existing == null) throw new KeyNotFoundException("Không tìm thấy danh mục để cập nhật.");
+
+        // Kiểm tra trùng tên với danh mục khác
+        if (await _context.Categories.AnyAsync(c => c.CategoryName == request.CategoryName && c.CategoryId != id))
+            throw new ArgumentException("Tên danh mục đã tồn tại.");
 
         existing.CategoryName = request.CategoryName;
         await _context.SaveChangesAsync();
@@ -77,7 +86,8 @@ public class CategoryServiceImpl : CategoryService
     public async Task<bool> DeleteAsync(int id)
     {
         var category = await _context.Categories.FindAsync(id);
-        if (category == null) return false;
+        // Kiểm tra không tồn tại
+        if (category == null) throw new KeyNotFoundException("Không tìm thấy danh mục để xóa.");
 
         _context.Categories.Remove(category);
         await _context.SaveChangesAsync();
